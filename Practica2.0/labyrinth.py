@@ -22,7 +22,7 @@ def process(rows: int, cols: int) -> UndirectedGraph:
     mfs = MergeFindSet()
     for v in vertices:
         mfs.add(v)
-    edges = []
+    edges = []--------------------------
 
     for r,c in vertices:
         if r+1 < rows:
