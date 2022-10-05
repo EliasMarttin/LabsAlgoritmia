@@ -1,5 +1,5 @@
 from algoritmia.viewers.labyrinth_viewer import LabyrinthViewer
-from labyrinth import process
+from labyrinthPersonal import process
 if __name__ == "__main__":
         rows = int(input("Filas: "))
         cols = int(input("Columnas: "))
