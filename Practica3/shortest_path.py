@@ -3,7 +3,7 @@ from typing import TextIO
 
 from algoritmia.datastructures.graphs import UndirectedGraph
 from algoritmia.datastructures.queues import Fifo
-from Practica2.labyrinth import create_labyrinth
+from Practica3.labyrinth import create_labyrinth
 
 Vertex = tuple [int,int]
 Edge = tuple [Vertex,Vertex]
