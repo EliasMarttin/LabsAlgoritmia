@@ -51,6 +51,7 @@ def process(W: int, v: list[Value], w: list[Weight]) -> tuple[Value, Weight, tup
             return self.extra.value
 
 
+
     return list(bt_max_solve(KnapsakDS(Extra(0, 0))))[-1]
 
 def show_results(sol: Solution):
