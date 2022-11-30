@@ -12,10 +12,17 @@ def read_data(f: TextIO) -> list[int]:
 # return [int(line) for line in f.readlines()]
 
 def process(entrada: list[int]):
-    def pf(i: int, j: int) -> Optional[int]:
+    def pf_iter(i: int, j: int) -> Optional[int]:
+        c = (i + j) // 2
+        while j > i and entrada[c] != c:
+            if entrada < c:
+                i = c + 1
+            if entrada[c] > c:
+                j = c
+        c = (i + j)
+
         if j <= i:
             return None
-        c = (i + j) // 2
         if entrada[c] == c: # Encontrado
             return c
         if entrada[c] < c:
